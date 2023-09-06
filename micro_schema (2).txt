@@ -1,0 +1,78 @@
+USER - Navya K K, Sriharinivaishnavi S (4 CURD)
+CREATE TABLE User (
+    UserID:Integer(auto generated and incremented),
+    Username:String,
+    Password:String,
+    Email:String,
+    FirstName:String,
+    LastName:String,
+    PhoneNo:Integer,
+    Address:String,
+    Role:String
+)
+
+THEATRE - Brindhaa, Sarthak Srivastava  (4 Curd)
+CREATE TABLE Theatre(
+  TheatreId:integer,
+  MovieId:Integer,
+  Theatrelocation:string,
+TicketPrice DECIMAL(10, 2),
+  NoOfSeats:Integer,
+  Time:Date
+)
+  
+
+
+MOVIE - Sandesh  (4 +3)
+CREATE TABLE Movie (
+    MovieID:Integer(auto generated and incremented) ,
+    MovieName:String,
+    Description:String,
+    Language:String,
+    Genre:String,
+    LocationId:Integer,
+    MovieTime:Date,
+    ReleaseDate DATE,
+    Status:boolean,
+    Duaration:string
+   
+)
+
+
+
+BOOKING - Nikita, (4 CURD)
+CREATE TABLE Booking (
+    BookingID:Integer(auto generated and incremented),
+    UserID:Integer,
+    TheatreId:Integer,
+    NumberOfTickets:Integer,
+    TotalAmount DECIMAL(10, 2),
+    BookingDate DATETIME,
+Status:boolean
+  
+   
+)
+
+PAYMENT - Muthupriya  (2 create and Read)
+CREATE TABLE Payment(
+PaymentId:Integer,
+UserId:Integer,
+BookingId:Integer,
+PaymentType:String,
+PaymentDate:Date,
+Status:boolean
+)
+
+LANGUAGE - Sireesha (4 Curd)
+CREATE TABLE Language(
+LanguageId:integer,
+Name:String
+)
+
+GENRE - Archana Murugesan (4 Curd)
+CREATE TABLE Genre(
+GenreId:integer,
+Name:String
+)
+
+
