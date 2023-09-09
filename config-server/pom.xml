@@ -8,10 +8,10 @@
 		<version>2.7.15</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.payroll</groupId>
-	<artifactId>emp-Config-Server</artifactId>
+	<groupId>com.movie</groupId>
+	<artifactId>config-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>emp-Config-Server</name>
+	<name>config-server</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>1.8</java.version>
@@ -26,18 +26,18 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-config-server</artifactId>
 		</dependency>
+		<!--  
+		<dependency> 
+			<groupId>org.springframework.cloud</groupId> 
+			<artifactId>spring-cloud-starter-bus-amqp</artifactId> 
+		</dependency>
+		-->
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		
-		<dependency> 
-			<groupId>org.springframework.cloud</groupId> 
-			<artifactId>spring-cloud-starter-bus-amqp</artifactId> 
-		</dependency>
-		
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>

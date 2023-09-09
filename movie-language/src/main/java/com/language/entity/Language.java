@@ -1,8 +1,6 @@
 package com.language.entity;
 
-//import java.sql.Date;
 
-//import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -41,10 +39,11 @@ public class Language {
 		this.name = name;
 	}
 
-	@Override
-	public String toString() {
-		return "Language [languageId=" + languageId + ", name=" + name + "]";
+	public Language() {
+		super();
 	}
+
+	
 	
 	
 	
