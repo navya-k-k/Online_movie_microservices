@@ -8,17 +8,10 @@
 		<version>2.7.15</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-<<<<<<< HEAD:movie-Config-Server/pom.xml
 	<groupId>com.payroll</groupId>
 	<artifactId>movie-Config-Server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>movie-Config-Server</name>
-=======
-	<groupId>com.movie</groupId>
-	<artifactId>config-server</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>config-server</name>
->>>>>>> ce01bb7dc053b36ee47f823b2c90a653fa9e09b5:config-server/pom.xml
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>1.8</java.version>
@@ -33,27 +26,18 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-config-server</artifactId>
 		</dependency>
-		<!--  
-		<dependency> 
-			<groupId>org.springframework.cloud</groupId> 
-			<artifactId>spring-cloud-starter-bus-amqp</artifactId> 
-		</dependency>
-		-->
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-<<<<<<< HEAD:movie-Config-Server/pom.xml
-		
-		<!--<dependency> 
+		<!--
+		<dependency> 
 			<groupId>org.springframework.cloud</groupId> 
 			<artifactId>spring-cloud-starter-bus-amqp</artifactId> 
-		</dependency>-->
-		
-=======
->>>>>>> ce01bb7dc053b36ee47f823b2c90a653fa9e09b5:config-server/pom.xml
+		</dependency>
+		-->
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>
