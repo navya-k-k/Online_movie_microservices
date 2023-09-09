@@ -67,15 +67,10 @@ public class Theatre {
 		NoOfRows = noOfRows;
 		Time = time;
 	}
-	@Override
-	public String toString() {
-		return "Theatre [TheatreId=" + TheatreId + ", MovieId=" + MovieId + ", Theatrelocation=" + Theatrelocation
-				+ ", NoOfColumn=" + NoOfColumn + ", NoOfRows=" + NoOfRows + ", Time=" + Time + "]";
-	} 
-	
+	public Theatre() {
+		super();
+	}
  }
-	
-	
 	
 	
 	
