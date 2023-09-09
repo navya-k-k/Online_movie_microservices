@@ -1,6 +1,4 @@
-package com.Payment;
-
-
+package com.language;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -11,10 +9,10 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @EnableEurekaClient
 @SpringBootApplication
-public class MoviePaymentappApplication {
+public class MovieLanguageappApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MoviePaymentappApplication.class, args);
+		SpringApplication.run(MovieLanguageappApplication.class, args);
 	}
 	
 	//@Bean
