@@ -5,13 +5,13 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.7.15</version>
+		<version>2.7.14</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.payroll</groupId>
-	<artifactId>emp-userapp</artifactId>
+	<groupId>com.mphasis</groupId>
+	<artifactId>movie-Theatre-Consumer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>emp-userapp</name>
+	<name>movie-Theatre-Consumer</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>1.8</java.version>
@@ -24,28 +24,27 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		
-		<dependency> 
-			<groupId>org.springframework.cloud</groupId> 
-			<artifactId>spring-cloud-starter-config</artifactId> 
-		</dependency> 
-		
-		<dependency> 
-			<groupId>org.springframework.cloud</groupId> 
-			<artifactId>spring-cloud-starter-bus-amqp</artifactId> 
-		</dependency>
-  
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
-			<!--
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-openfeign</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-circuitbreaker-resilience4j</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-aop</artifactId>
+		</dependency>
+		 
 		<dependency>
       		<groupId>org.springframework.cloud</groupId>
       		<artifactId>spring-cloud-sleuth-zipkin</artifactId>
@@ -55,19 +54,12 @@
       		<groupId>org.springframework.cloud</groupId>
       		<artifactId>spring-cloud-starter-sleuth</artifactId>
     	</dependency>
-		-->	
+
 		<dependency>
-			<groupId>com.mysql</groupId>
-			<artifactId>mysql-connector-j</artifactId>
-			<scope>runtime</scope>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
 		</dependency>
-		
-		<dependency>
-      		<groupId>org.projectlombok</groupId>
-     		 <artifactId>lombok</artifactId>
-      		<optional>true</optional>
-    	</dependency>
-    	
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -91,6 +83,14 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<excludes>
+						<exclude>
+							<groupId>org.projectlombok</groupId>
+							<artifactId>lombok</artifactId>
+						</exclude>
+					</excludes>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
