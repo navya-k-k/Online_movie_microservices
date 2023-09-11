@@ -8,7 +8,7 @@ import com.language.entity.Language;
 public interface LanguageService {
 	
 	public Language addLanguage(Language language);
-	public Language updateLanguage(Language language);
+	public Language updateLanguage(Language language,Integer id);
 	public List<Language> getAllLanguages ();
 	public Language getLanguageById (Integer id);
 	public void deleteLanguageById (Integer id);
