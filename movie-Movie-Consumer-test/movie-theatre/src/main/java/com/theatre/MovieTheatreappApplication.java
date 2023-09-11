@@ -3,9 +3,9 @@ package com.theatre;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
-import org.springframework.context.annotation.Bean;
+//import org.springframework.context.annotation.Bean;
 
-import brave.sampler.Sampler;
+//import brave.sampler.Sampler;
 
 @EnableEurekaClient
 @SpringBootApplication
@@ -15,10 +15,10 @@ public class MovieTheatreappApplication {
 		SpringApplication.run(MovieTheatreappApplication.class, args);
 	}
 	
-	@Bean
-	public Sampler alwaysSampler() {
+	//@Bean
+	//public Sampler alwaysSampler() {
 	
-	    return Sampler.ALWAYS_SAMPLE;
-	}
+	//    return Sampler.ALWAYS_SAMPLE;
+	//}
 
 }

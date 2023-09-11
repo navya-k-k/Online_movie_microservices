@@ -18,7 +18,8 @@ public class Theatre {
     private Integer TheatreId;
 	private Integer MovieId;
 	private String Theatrelocation;
-	private Integer  NoOfSeats;
+	private Integer  NoOfColumn;
+	private Integer  NoOfRows;
 	private Date Time;
 	public Integer getTheatreId() {
 		return TheatreId;
@@ -38,11 +39,17 @@ public class Theatre {
 	public void setTheatrelocation(String theatrelocation) {
 		Theatrelocation = theatrelocation;
 	}
-	public Integer getNoOfSeats() {
-		return NoOfSeats;
+	public Integer getNoOfColumn() {
+		return NoOfColumn;
 	}
-	public void setNoOfSeats(Integer noOfSeats) {
-		NoOfSeats = noOfSeats;
+	public void setNoOfColumn(Integer noOfColumn) {
+		NoOfColumn = noOfColumn;
+	}
+	public Integer getNoOfRows() {
+		return NoOfRows;
+	}
+	public void setNoOfRows(Integer noOfRows) {
+		NoOfRows = noOfRows;
 	}
 	public Date getTime() {
 		return Time;
@@ -50,15 +57,21 @@ public class Theatre {
 	public void setTime(Date time) {
 		Time = time;
 	}
-	public Theatre(Integer theatreId, Integer movieId, String theatrelocation, Integer noOfSeats, Date time) {
+	public Theatre(Integer theatreId, Integer movieId, String theatrelocation, Integer noOfColumn, Integer noOfRows,
+			Date time) {
 		super();
 		TheatreId = theatreId;
 		MovieId = movieId;
 		Theatrelocation = theatrelocation;
-		NoOfSeats = noOfSeats;
+		NoOfColumn = noOfColumn;
+		NoOfRows = noOfRows;
 		Time = time;
 	}
 	public Theatre() {
 		super();
 	}
  }
+	
+	
+	
+	

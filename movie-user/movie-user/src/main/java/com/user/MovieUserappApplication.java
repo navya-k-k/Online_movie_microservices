@@ -1,6 +1,7 @@
-package com.theatre;
+package com.user;
 
 import org.springframework.boot.SpringApplication;
+
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.annotation.Bean;
@@ -9,10 +10,10 @@ import brave.sampler.Sampler;
 
 @EnableEurekaClient
 @SpringBootApplication
-public class MovieTheatreappApplication {
+public class MovieUserappApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MovieTheatreappApplication.class, args);
+		SpringApplication.run(MovieUserappApplication.class, args);
 	}
 	
 	@Bean
